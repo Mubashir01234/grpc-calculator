@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+package calculator;
+option go_package = "grpc-calculator/proto";
+
+message PrimeRequest { int64 number = 1; }
+
+message PrimeResponse { int64 result = 1; }
